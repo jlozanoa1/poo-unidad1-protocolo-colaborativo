@@ -6,4 +6,9 @@ public class Coche {
     public static void main(String[] args) {
 
     }
+
+    // ----------------- GETTERS -----------------
+    public static int getContadorCoches() {
+        return contadorCoches;
+    }
 }
