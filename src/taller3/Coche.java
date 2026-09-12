@@ -3,10 +3,6 @@ public class Coche {
     private String modelo;
     private static int contadorCoches = 0;
 
-    public static void main(String[] args) {
-
-    }
-
     public Coche(String marca, String modelo) {
         String marcaNormalizado = marca.strip();
         String modeloNormalizado = modelo.strip();
