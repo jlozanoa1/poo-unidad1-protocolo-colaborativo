@@ -7,8 +7,6 @@ public class Coche {
 
     }
 
-    // ------------- CONSTRUCTORES -------------
-    // 1. Constructor principal
     public Coche(String marca, String modelo) {
         String marcaNormalizado = marca.strip();
         String modeloNormalizado = modelo.strip();
@@ -23,6 +21,7 @@ public class Coche {
 
         this.marca = marcaNormalizado;
         this.modelo = modeloNormalizado;
+        contadorCoches++;
     }
 
     // ----------------- GETTERS -----------------
