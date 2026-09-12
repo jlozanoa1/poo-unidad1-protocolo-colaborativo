@@ -12,7 +12,17 @@ public class Main {
         System.out.print("Ingrese el valor del número B: ");
         double numeroB = teclado.nextDouble();
 
+        System.out.printf("%nA. Sumar%nB. Restar%nC. Multiplicar%nD. Dividir%n%n");
         System.out.print("¿Qué operación quiere realizar? ");
         char operacion = Character.toLowerCase(teclado.next().charAt(0));
+
+        switch (operacion) {
+            case 'a':
+                System.out.println("Sumando...");
+                break;
+
+            default:
+                System.out.println("Ingrese una operación válida (A, B, C, D).");
+        }
     }
 }
