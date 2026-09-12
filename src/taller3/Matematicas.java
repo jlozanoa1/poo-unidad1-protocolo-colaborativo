@@ -18,7 +18,7 @@ public class Matematicas {
         return resultado;
     }
 
-    public static double division(double numerador, double denominador) throws IllegalArgumentException {
+    public static double division(double numerador, double denominador) throws Exception {
         if (denominador == 0) {
             throw new IllegalArgumentException("No es posible dividir entre 0.");
         }
