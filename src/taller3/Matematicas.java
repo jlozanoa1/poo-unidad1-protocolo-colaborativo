@@ -3,19 +3,26 @@ public class Matematicas {
         throw new AssertionError("Esta clase no puede ser instanciada.");
     }
 
-    public static double suma(double num1, double num2) {
-        return 0;
+    public static double suma(double numero1, double numero2) {
+        double resultado = numero1 + numero2;
+        return resultado;
     }
 
-    public static double resta(double num1, double num2) {
-        return 0;
+    public static double resta(double numero1, double numero2) {
+        double resultado = numero1 - numero2;
+        return resultado;
     }
 
-    public static double multiplicacion(double num1, double num2) {
-        return 0;
+    public static double multiplicacion(double numero1, double numero2) {
+        double resultado = numero1 * numero2;
+        return resultado;
     }
 
-    public static double division(double num1, double num2) {
-        return 0;
+    public static double division(double numerador, double denominador) throws IllegalArgumentException {
+        if (denominador == 0) {
+            throw new IllegalArgumentException("No es posible dividir entre 0.");
+        }
+        double resultado = numerador / denominador;
+        return resultado;
     }
 }
