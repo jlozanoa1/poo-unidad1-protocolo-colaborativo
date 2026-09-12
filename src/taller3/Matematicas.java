@@ -1,6 +1,6 @@
-public class Matematicas {
+public final class Matematicas {
     private Matematicas() {
-        throw new AssertionError("Esta clase no puede ser instanciada.");
+        throw new UnsupportedOperationException("Esta clase no puede ser instanciada.");
     }
 
     public static double suma(double numero1, double numero2) {
@@ -18,7 +18,7 @@ public class Matematicas {
         return resultado;
     }
 
-    public static double division(double numerador, double denominador) throws Exception {
+    public static double division(double numerador, double denominador) throws IllegalArgumentException {
         if (denominador == 0) {
             throw new IllegalArgumentException("No es posible dividir entre 0.");
         }
