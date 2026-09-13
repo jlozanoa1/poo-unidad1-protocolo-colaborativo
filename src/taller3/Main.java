@@ -20,22 +20,26 @@ public class Main {
         switch (operacion) {
             case 'a':
                 resultado = Matematicas.suma(numeroA, numeroB);
-                System.out.printf("El resultado es: %.2f.%n", resultado);
+                System.out.printf("%nEl resultado es: %.2f.%n", resultado);
                 break;
 
             case 'b':
                 resultado = Matematicas.resta(numeroA, numeroB);
-                System.out.printf("El resultado es: %.2f.%n", resultado);
+                System.out.printf("%nEl resultado es: %.2f.%n", resultado);
                 break;
 
             case 'c':
                 resultado = Matematicas.multiplicacion(numeroA, numeroB);
-                System.out.printf("El resultado es: %.2f.%n", resultado);
+                System.out.printf("%nEl resultado es: %.2f.%n", resultado);
                 break;
 
             case 'd':
-                resultado = Matematicas.division(numeroA, numeroB);
-                System.out.printf("El resultado es: %.2f.%n", resultado);
+                try {
+                    resultado = Matematicas.division(numeroA, numeroB);
+                    System.out.printf("%nEl resultado es: %.2f.%n", resultado);
+                } catch (IllegalArgumentException e) {
+                    System.out.printf("%nError: %s%n", e.getMessage());
+                }
                 break;
 
             default:
