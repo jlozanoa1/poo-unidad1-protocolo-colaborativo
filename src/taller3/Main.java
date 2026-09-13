@@ -16,9 +16,26 @@ public class Main {
         System.out.print("¿Qué operación quiere realizar? ");
         char operacion = Character.toLowerCase(teclado.next().charAt(0));
 
+        double resultado;
         switch (operacion) {
             case 'a':
-                System.out.println("Sumando...");
+                resultado = Matematicas.suma(numeroA, numeroB);
+                System.out.printf("El resultado es: %.2f.%n", resultado);
+                break;
+
+            case 'b':
+                resultado = Matematicas.resta(numeroA, numeroB);
+                System.out.printf("El resultado es: %.2f.%n", resultado);
+                break;
+
+            case 'c':
+                resultado = Matematicas.multiplicacion(numeroA, numeroB);
+                System.out.printf("El resultado es: %.2f.%n", resultado);
+                break;
+
+            case 'd':
+                resultado = Matematicas.division(numeroA, numeroB);
+                System.out.printf("El resultado es: %.2f.%n", resultado);
                 break;
 
             default:
