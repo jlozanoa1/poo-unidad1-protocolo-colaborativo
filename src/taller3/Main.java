@@ -2,9 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Prueba de ejecución de la clase Matematicas.");
-
         Scanner teclado = new Scanner(System.in);
+
+        // Primero probamos la clase Matematicas
+        ejecutarMatematicas(teclado);
+    }
+
+    private static void ejecutarMatematicas(Scanner teclado) {
+        System.out.println("Prueba de ejecución de la clase Matematicas.");
 
         System.out.print("Ingrese el valor del número A: ");
         double numeroA = teclado.nextDouble();
@@ -13,6 +18,7 @@ public class Main {
         double numeroB = teclado.nextDouble();
 
         System.out.printf("%nA. Sumar%nB. Restar%nC. Multiplicar%nD. Dividir%n%n");
+
         System.out.print("¿Qué operación quiere realizar? ");
         char operacion = Character.toLowerCase(teclado.next().charAt(0));
 
