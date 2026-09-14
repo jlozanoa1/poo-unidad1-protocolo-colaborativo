@@ -21,6 +21,11 @@ public class Coche {
     }
 
     // ----------------- GETTERS -----------------
+    @Override
+    public String toString() {
+        return String.format("Marca: %s | Modelo: %s", this.marca, this.modelo);
+    }
+
     public static int getContadorCoches() {
         return contadorCoches;
     }

@@ -23,6 +23,7 @@ public class ErrorAccesoEstatico {
         System.out.println(objeto2.getId());
 
         objeto1.cambiarId();
+        objeto2.cambiarId();
 
         System.out.println(objeto1.getId());
         System.out.println(objeto2.getId());
