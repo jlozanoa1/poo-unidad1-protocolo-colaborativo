@@ -1,0 +1,10 @@
+public class Persona {
+    private String nombre;
+
+    public static void mostrarNombre() {
+        System.out.println(this.nombre);
+    }
+}
+
+Código incorrecto de la guía: this no puede usarse dentro de un método static.
+Se conserva como texto para que el proyecto final compile sin errores.
