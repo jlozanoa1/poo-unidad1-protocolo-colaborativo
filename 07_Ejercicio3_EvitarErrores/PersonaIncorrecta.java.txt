@@ -1,0 +1,10 @@
+public class Persona {
+    private String nombre;
+
+    public static void mostrarNombre() {
+        System.out.println(this.nombre);
+    }
+}
+
+Código incorrecto solicitado por la guía para observar el error de compilación.
+Se conserva como texto para que la versión final no tenga errores.
